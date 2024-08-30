@@ -21,4 +21,6 @@ docker buildx bake --push --set="*.platform=$DOCKER_PLATFORMS" -f "docker.bake.h
 Based off of [iredis](https://github.com/laixintao/iredis/tree/master), at no particular
 version, this is just to use from the terminal for small deployments (not that deep).
 
+You can mount `/root/iredis` to persist history.
+
 `docker run --rm -it kunettyi/iredis:latest --help`
